@@ -60,7 +60,7 @@ jobs:
       run: mvn test
   
   sonarqube-analysis: 
-    run-on: self-hosted
+    runs-on: self-hosted
     needs: unit-test
     steps:
     - uses: actions/checkout@v4
