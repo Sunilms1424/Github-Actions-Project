@@ -100,7 +100,7 @@ jobs:
     runs-on: self-hosted
     needs: sonarqube-analysis
     steps:
-    - uses: action/checkout@v4
+    - uses: actions/checkout@v4
 
     - name: download the artifact
       uses: action/download-artifact@v4
